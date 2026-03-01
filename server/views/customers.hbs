@@ -1,0 +1,19 @@
+{{> header}}
+{{> menu}}
+
+<h2>25 Clients</h2>
+
+{{#each customers}}
+  <div class="card">
+    <h3>{{first_name}} {{last_name}}</h3>
+
+    <ul>
+      {{#each rentals}}
+        <li>{{title}}</li>
+      {{/each}}
+    </ul>
+
+  </div>
+{{/each}}
+
+{{> footer}}

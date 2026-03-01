@@ -1,0 +1,15 @@
+{{> header}}
+{{> menu}}
+
+<h2>15 Primeres Pel·lícules</h2>
+
+<div class="cards">
+  {{#each movies}}
+    <div class="card">
+      <h3>{{title}} ({{release_year}})</h3>
+      <p><strong>Actors:</strong> {{actors}}</p>
+    </div>
+  {{/each}}
+</div>
+
+{{> footer}}

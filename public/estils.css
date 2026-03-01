@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #f4f4f4;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cartas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.carta {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 250px;
+}
+

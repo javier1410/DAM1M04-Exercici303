@@ -1,0 +1,15 @@
+{{> header}}
+{{> menu}}
+
+<h2>Afegir pel·lícula</h2>
+
+<form method="POST" action="/afegirPeli">
+  <input type="text" name="title" required>
+  <input type="text" name="description">
+  <input type="number" name="release_year">
+  <input type="number" name="language_id" required>
+
+  <button type="submit">Afegir</button>
+</form>
+
+{{> footer}}

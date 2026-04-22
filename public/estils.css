@@ -23,3 +23,87 @@ nav a {
   width: 250px;
 }
 
+.formulari {
+  max-width: 37%;
+  margin:  auto;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.formulari h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+}
+
+
+.formulari label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Inputs */
+.formulari input[type="text"],
+.formulari input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+/* Botón principal (guardar) */
+.formulari button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #172f49;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.formulari button:hover {
+  background-color: #0056b3;
+}
+
+/* Formulario de borrar */
+form[action="/esborrarPeli"] {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Botón de borrar */
+form[action="/esborrarPeli"] button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form[action="/esborrarPeli"] button:hover {
+  background-color: #a71d2a;
+}
+
+
+/* Hover botón */
+.Add_formulari button:hover {
+  background-color: #357ab8;
+}

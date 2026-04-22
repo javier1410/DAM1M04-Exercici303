@@ -3,11 +3,27 @@
 
 <h2>Afegir pel·lícula</h2>
 
-<form method="POST" action="/afegirPeli">
-  <input type="text" name="title" required>
-  <input type="text" name="description">
-  <input type="number" name="release_year">
-  <input type="number" name="language_id" required>
+<form method="POST" action="/afegirPeli" class="formulari">
+
+  <div class="form-group">
+    <label for="title">Títol</label>
+    <input type="text" id="title" name="title" required>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Descripció</label>
+    <input type="text" id="description" name="description">
+  </div>
+
+  <div class="form-group">
+    <label for="release_year">Any de publicació</label>
+    <input type="number" id="release_year" name="release_year">
+  </div>
+
+  <div class="form-group">
+    <label for="language_id">Idioma (ID)</label>
+    <input type="number" id="language_id" name="language_id" required>
+  </div>
 
   <button type="submit">Afegir</button>
 </form>

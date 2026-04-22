@@ -318,6 +318,11 @@ app.post('/esborrarPeli', async (req, res) => {
     res.status(500).send("Error esborrant")
   }
 })
+// GET afegirPeli
+app.get('/afegirPeli', (req, res) => {
+  res.render('movieAdd');
+});
+
 // POST afegirPeli
 
 app.post('/afegirPeli', async (req, res) => {

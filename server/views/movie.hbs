@@ -1,6 +1,11 @@
+
+{{> header}}
+
 <h1>{{movie.title}}</h1>
-<p>{{movie.description}}</p>
-<p>Any: {{movie.release_year}}</p>
-<p>Idioma: {{movie.language_id}}</p>
+<p><strong>Descripció: </strong>{{movie.description}}</p>
+<p><strong>Any: </strong> {{movie.release_year}}</p>
+<p><strong>Idioma:</strong> {{movie.language_id}}</p>
 
 <a href="/movieEdit?id={{movie.film_id}}">Editar pel·lícula</a>
+
+{{> footer}}

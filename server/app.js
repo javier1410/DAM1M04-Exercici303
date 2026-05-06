@@ -18,7 +18,7 @@ if (!isProxmox) {
     port: 3306,
     user: 'root',
     password: 'root',
-    database: 'sakila'   // MODIFICAT: abans era 'escola'
+    database: 'sakila'   
   });
 } else {
   db.init({
@@ -26,7 +26,7 @@ if (!isProxmox) {
     port: 3306,
     user: 'super',
     password: '1234',
-    database: 'sakila'   // MODIFICAT: abans era 'escola'
+    database: 'sakila' 
   });
 }
 

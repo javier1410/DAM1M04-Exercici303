@@ -63,9 +63,10 @@ app.get('/', async (req, res) => {
       SELECT f.title, f.release_year,
         GROUP_CONCAT(CONCAT(a.first_name,' ',a.last_name) SEPARATOR ', ') AS actors
       FROM film f
-      JOIN film_actor fa ON fa.film_id = f.film_id
-      JOIN actor a ON a.actor_id = fa.actor_id
+      LEFT JOIN film_actor fa ON fa.film_id = f.film_id
+      LEFT JOIN actor a ON a.actor_id = fa.actor_id
       GROUP BY f.film_id
+      ORDER BY f.title ASC
       LIMIT 5
     `);
 
@@ -115,9 +116,10 @@ app.get('/movies', async (req, res) => {
   SELECT f.film_id, f.title, f.release_year,
     GROUP_CONCAT(CONCAT(a.first_name,' ',a.last_name) SEPARATOR ', ') AS actors
   FROM film f
-  JOIN film_actor fa ON fa.film_id = f.film_id
-  JOIN actor a ON a.actor_id = fa.actor_id
+  LEFT JOIN film_actor fa ON fa.film_id = f.film_id
+  LEFT JOIN actor a ON a.actor_id = fa.actor_id
   GROUP BY f.film_id
+  ORDER BY f.title ASC
   LIMIT 15
 `);
 
